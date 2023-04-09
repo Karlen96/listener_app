@@ -1,0 +1,13 @@
+{
+  "next": "Next",
+  "dashboardPage": {
+    "myList": "My list",
+    "popular": "Popular of Netflix"
+  },
+  "movieTypes": {
+    "popular": "Popular",
+    "topRated": "Top rated",
+    "nowPlaying": "Now playing",
+    "upcoming": "Upcoming"
+  }
+}
