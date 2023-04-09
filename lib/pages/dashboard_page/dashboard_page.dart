@@ -56,21 +56,17 @@ class _DashboardPageState extends State<DashboardPage> with AfterLayoutMixin {
     }
     _dashboardState.currentPlayingId = episode.episodeId;
 
-    final duration = await player.setUrl(
-      episode.playbackUrl,
+    final duration = await player.setAudioSource(
+      AudioSource.uri(
+        Uri.parse(episode.playbackUrl),
+        tag: MediaItem(
+          id: episode.episodeId.toString(),
+          title: episode.title,
+        ),
+      ),
     );
     player.play();
-    ///TODO background task
-    // AudioSource.uri(
-    //   Uri.parse(episode.playbackUrl),
-    //   tag: MediaItem(
-    //     id: '1',
-    //     // Metadata to display in the notification:
-    //     album: "Album name",
-    //     title: episode.title,
-    //     artUri: Uri.parse(episode.playbackUrl),
-    //   ),
-    // );
+
     _dashboardState.playing = player.playing;
   }
 
