@@ -1,16 +1,15 @@
-# listener_app
+# Listener app
 
-A new Flutter project.
+Application using flutter framework.
 
-## Getting Started
+Everyone has heard about Spotify at least once in their life.
+That's a very popular application for listening interesting podcasts and episodes.
 
-This project is a starting point for a Flutter application.
+After enjoying of that application i decided create the new one like Spotify, Audible, Google Play Books.
 
-A few resources to get you started if this is your first Flutter project:
+And i created new application witch name is Listener app the main idea of this application you can see below.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1) Listen audio to more sources like Spreaker.
+2) Choose device type that you want using for listening.
+3) Opportunity continue listening, change position of episode, change volume of background mode. 
+4) Support that functionality on Android and ios platform.
