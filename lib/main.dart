@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 
+import 'consts/app_colors.dart';
 import 'consts/assets.dart';
 import 'consts/configs.dart';
 import 'http/dio.dart';
@@ -14,7 +15,9 @@ Future<void> main() async {
     androidNotificationChannelId: 'com.ryanheise.bg_demo.channel.audio',
     androidNotificationChannelName: 'Audio playback',
     androidNotificationOngoing: true,
+    androidStopForegroundOnPause: true,
   );
+
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await setConfigs();
